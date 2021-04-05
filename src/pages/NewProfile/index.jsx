@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
 import { NewProfileInfo } from "../../components/NewProfileInfo";
@@ -11,7 +11,6 @@ import loginImg from '../../assets/login.svg';
 
 export function NewProfile() {
   const { newUserData, handleSaveProfile } = useContext(UserContext);
-  const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
     
   const handleBack = () => {

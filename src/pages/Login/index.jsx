@@ -8,9 +8,8 @@ import { UserContext } from '../../context/UserContext';
 import { useHistory } from 'react-router-dom';
 
 export function Login() {
-  const { setUserData, setIsAuthenticated } = useContext(UserContext);
+  const { setUserData, isLoading, setIsLoading, setIsAuthenticated } = useContext(UserContext);
   const [typedUsername, setTypedUsername] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
   const [isEmpty, setIsEmpty] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
   

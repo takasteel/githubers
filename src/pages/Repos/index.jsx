@@ -10,8 +10,7 @@ import { TopBar, Container } from './styles';
 import arrowLeftImg from '../../assets/arrow-left.svg'
 
 export function Repos() {
-  const { repos_url, public_repos } = useContext(UserContext);
-  const [isLoading, setIsLoading] = useState(false);
+  const { isLoading, setIsLoading, repos_url, public_repos } = useContext(UserContext);
   const [myRepositories, setMyRepositories] = useState([]);
   const history = useHistory();
   const fetchRepos = async () => {

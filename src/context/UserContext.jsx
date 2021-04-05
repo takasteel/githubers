@@ -18,6 +18,8 @@ export function UserProvider({children}) {
     return {};
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
     const auth = sessionStorage.getItem('@githuber:auth');
     if (auth) {
@@ -57,6 +59,8 @@ export function UserProvider({children}) {
         setUserData,
         newUserData,
         setNewUserData,
+        isLoading,
+        setIsLoading,
         isAuthenticated,
         setIsAuthenticated,
         login,

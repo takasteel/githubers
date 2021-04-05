@@ -8,8 +8,7 @@ import { useHistory } from "react-router-dom";
 import { Container, TopBar } from './styles';
 
 export function Followers() {
-  const { followers, followers_url } = useContext(UserContext);
-  const [isLoading, setIsLoading] = useState(false);
+  const { isLoading, setIsLoading, followers, followers_url } = useContext(UserContext);
   const [myFollowers, setMyFollowers] = useState([]);
   const history = useHistory();
   const fetchFollowers = async () => {

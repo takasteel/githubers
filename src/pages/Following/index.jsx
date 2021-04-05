@@ -8,8 +8,7 @@ import { useHistory } from "react-router-dom";
 import { Container, TopBar } from './styles';
 
 export function Following() {
-  const { following, following_url } = useContext(UserContext);
-  const [isLoading, setIsLoading] = useState(false);
+  const { isLoading, setIsLoading, following, following_url } = useContext(UserContext);
   const [myFollowing, setMyFollowing] = useState([]);
   const history = useHistory();
   const fetchFollowing = async () => {
