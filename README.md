@@ -1,6 +1,6 @@
 # Githubers  
 This was a project I did to apply for [Luby's](https://www.luby.com.br/en/home/) internship program.  
-It is a PWA made with ReactJS that uses [Github public API](https://docs.github.com/en/rest) allowing you to navigate through github users and see their profiles informations like followers, following and repos.  
+It is a PWA based on their prototype, made with ReactJS that uses [Github public API](https://docs.github.com/en/rest) allowing you to navigate through github users and see their profiles informations like followers, following and repos.  
 
 
 
